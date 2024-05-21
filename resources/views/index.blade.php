@@ -15,7 +15,7 @@
     </div>
   @endif
 
-  <h1>Welcome to Student Panel!</h1>
+  <h1 class="text-center">Welcome to Student Panel!</h1>
 
   <div class="card-header mt-4">
     <a href="{{ route('student.create') }}" class="btn btn-primary float-end">Add Student</a>
@@ -42,7 +42,7 @@
                 <td> {{$result->age}} </td>
                 <td> {{$result->phone_number}} </td>
                 <td> {{$result->city}} </td>
-                <td> <a href="{{route('student.update', $result->id)}}" class="btn btn-info">Edit</a> </td>
+                <td> <a href="{{route('student.edit', $result->id)}}" class="btn btn-info">Edit</a> </td>
                 <td> <a href="{{route('student.delete', $result->id)}}" class="btn btn-danger">Delete</a> </td>
             </tr>
         @endforeach
